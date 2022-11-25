@@ -22,11 +22,11 @@
                 -->
                 <div class="container">
                     <form id="login" onsubmit="process(event)">
-                
-                      <input id="phone" type="tel" name="phone" class="telefono" placeholder="Ingresar número" />
-                      <input type="submit" class="btnTelefono" value="Asesórate" />
+                        <div class="alert alert-info" style="display: none;"></div>
+                        <input id="phone" type="tel" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" name="phone" class="telefono" placeholder="Ingresar número" />
+                        <input type="submit" class="btnTelefono" value="Asesórate" />
                     </form>
-                    <div class="alert alert-info" style="display: none;"></div>
+                    
                 </div>
                 <!--<button>Asesórate</button>-->
             </div>

@@ -1,3 +1,4 @@
+
 const phoneInputField = document.querySelector("#phone");
     const phoneInput = window.intlTelInput(phoneInputField, {
       onlyCountries: ["pe", "co", "ar", "br", "cl", "mx", "es"],
@@ -8,7 +9,7 @@ const phoneInputField = document.querySelector("#phone");
     utilsScript:
       "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
    });
-   
+
 
    const info = document.querySelector(".alert-info");
 
@@ -69,7 +70,7 @@ const phoneInputField = document.querySelector("#phone");
 
   let p = document.getElementById("LiteClick"); // Obtiene el elemento con el id LiteClick
   p.onclick = muestraAlerta; // Agrega función onclick al elemento
-    
+  
   function muestraAlerta(evento) {
 
     document.querySelector("#details-aux-tit-d1").innerHTML="&#10004";
