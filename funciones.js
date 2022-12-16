@@ -11,17 +11,7 @@ const phoneInputField = document.querySelector("#phone");
    });
 
 
-   const info = document.querySelector(".alert-info");
-
-   function process(event) {
-    event.preventDefault();
    
-    const phoneNumber = phoneInput.getNumber();
-   
-    info.style.display = "";
-    info.innerHTML = `El formato de teléfono debe ser: <strong>${phoneNumber}</strong>`;
-   };
-
 
 
    function getIp(callback) {
