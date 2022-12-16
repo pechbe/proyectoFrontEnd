@@ -286,8 +286,8 @@ body {
 }
 
 .formulario__btn:hover {
-	background: #8a73e9;
-    color: black;
+    background: #cac3e7;
+    color: rgb(126, 118, 118);
 }
 
 .seccion_pago2_2{
@@ -486,6 +486,9 @@ body {
     border-radius: 6px; 
     border: 1px solid ;
     border-color: gray; 
+
+   
+
     font-size: 15px;
     font-weight: bold;
     color:white;
@@ -493,11 +496,12 @@ body {
 	font-size: 16px;
 	cursor: pointer;
 	transition: .3s ease all;
+
 }
 
 .popup form .btn-submit:hover {
-	background: #8a73e9;
-    color: black;
+	background: #cac3e7;
+    color: rgb(126, 118, 118);
 }
 
 .popup.active {
