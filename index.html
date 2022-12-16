@@ -45,43 +45,55 @@
         <div class="cards">
             <div class="card-lite">
                 <div class="card-tit"></div>
-                <div class="card1">
-                    <div class="card-head1">
-                        <p class="card-head1-tit1"><b>Lite</b></p>
-                        <p class="card-head1-tit2">Pago por 6 meses</p>
+                <form action="/pago.html">
+                    <input type="text" name ="source_detail" value="Lite" style="display: none;">
+                    <input type="text" name ="source_page" value="Membership+Landing" style="display: none;">
+                    <input type="text" name ="membership_id" value="1444" style="display: none;">
+                    <div class="card1">
+                        <div class="card-head1">
+                            <p class="card-head1-tit1"><b>Lite</b></p>
+                            <p class="card-head1-tit2">Pago por 6 meses</p>
+                        </div>
+                        <div class="card-head2">
+                            <p class="card-head2-tit1"><b>S/174,00</b></p>
+                            <p class="card-head2-tit2">Precio final</p>
+                            <p class="card-head2-tit3">1 Estudiante</p>
+                        </div>
+                        <div class="card-head3">
+                            <input type="submit" value="Vuélvete Premium">
+                        </div>
+                        <div class="card-head4">
+                            <a href="">REGALAR ESTE PLAN</a>
+                        </div>
                     </div>
-                    <div class="card-head2">
-                        <p class="card-head2-tit1"><b>S/174,00</b></p>
-                        <p class="card-head2-tit2">Precio final</p>
-                        <p class="card-head2-tit3">1 Estudiante</p>
-                    </div>
-                    <div class="card-head3">
-                        <button>Vuélvete Premium</button>
-                    </div>
-                    <div class="card-head4">
-                        <a href="">REGALAR ESTE PLAN</a>
-                    </div>
-                </div>
+                </form>
+                
             </div>
             <div class="card-individual">
                 <div class="card-tit"></div>
-                <div class="card2">
-                    <div class="card-head1">
-                        <p class="card-head1-tit1"><b>Individual</b></p>
-                        <p class="card-head1-tit2">Pago anual</p>
+                <form action="/pago.html">
+                    <input type="text" name ="source_detail" value="Individual" style="display: none;">
+                    <input type="text" name ="source_page" value="Membership+Landing" style="display: none;">
+                    <input type="text" name ="membership_id" value="34" style="display: none;">
+                    <div class="card2">
+                        <div class="card-head1">
+                            <p class="card-head1-tit1"><b>Individual</b></p>
+                            <p class="card-head1-tit2">Pago anual</p>
+                        </div>
+                        <div class="card-head2">
+                            <p class="card-head2-tit1"><b>S/279,00</b></p>
+                            <div class="precioantes" ><p class="card-head2-tit2">Antes</p><p class="card-head2-tit2" style="text-decoration:line-through;">S/ 408,00</p></div>
+                            <p class="card-head2-tit3">1 Estudiante</p>
+                        </div>
+                        <div class="card-head3">
+                            <input type="submit" value="Vuélvete Premium">
+                        </div>
+                        <div class="card-head4">
+                            <a href="">REGALAR ESTE PLAN</a>
+                        </div>
                     </div>
-                    <div class="card-head2">
-                        <p class="card-head2-tit1"><b>S/279,00</b></p>
-                        <div class="precioantes" ><p class="card-head2-tit2">Antes</p><p class="card-head2-tit2" style="text-decoration:line-through;">S/ 408,00</p></div>
-                        <p class="card-head2-tit3">1 Estudiante</p>
-                    </div>
-                    <div class="card-head3">
-                        <button>Vuélvete Premium</button>
-                    </div>
-                    <div class="card-head4">
-                        <a href="">REGALAR ESTE PLAN</a>
-                    </div>
-                </div>
+                </form>
+                
             </div>
             <div class="card-duo">
                 <div class="card-tit card-tit-duo">Más popular</div>
@@ -90,26 +102,32 @@
                         <p class="card-head1-tit1"><b>Dúo</b></p>
                         <p class="card-head1-tit2">Pago anual</p>
                     </div>
-                    <div class="card-head2">
-                        <p class="card-head2-tit1"><b>S/319,00</b></p>
-                        <div class="precioantes" ><p class="card-head2-tit2">Antes</p><p class="card-head2-tit2" style="text-decoration:line-through;">S/ 490,00</p></div>
-                        <div class="dropdown">
-                            <div class="select">
-                                <span class="selected">2 Estudiantes</span>
-                                <div class="caret"></div>
+                    <form action="/pago.html">
+                        <input type="text" name ="source_detail" value="Dúo" style="display: none;">
+                        <input type="text" name ="source_page" value="Membership+Landing" style="display: none;">
+                        <input type="text" name ="membership_id" value="325" style="display: none;">
+                        <div class="card-head2">
+                            <p class="card-head2-tit1"><b>S/319,00</b></p>
+                            <div class="precioantes" ><p class="card-head2-tit2">Antes</p><p class="card-head2-tit2" style="text-decoration:line-through;">S/ 490,00</p></div>
+                            <div class="dropdown">
+                                <div class="select">
+                                    <span class="selected">2 Estudiantes</span>
+                                    <div class="caret"></div>
+                                </div>
+                                <ul class="menu">
+                                    <li class="active">2 Estudiantes</li>
+                                    <li>4  Estudiantes</li>
+                                </ul>
                             </div>
-                            <ul class="menu">
-                                <li class="active">2 Estudiantes</li>
-                                <li>4  Estudiantes</li>
-                            </ul>
                         </div>
-                    </div>
-                    <div class="card-head3">
-                        <button class="btn-popular">Vuélvete Premium</button>
-                    </div>
-                    <div class="card-head4">
-                        <a href="">REGALAR ESTE PLAN</a>
-                    </div>
+                        <div class="card-head3">
+                            <input class="btn-popular" type="submit" value="Vuélvete Premium">
+                        </div>
+                        <div class="card-head4">
+                            <a href="">REGALAR ESTE PLAN</a>
+                        </div>
+                    </form>
+                    
                 </div>
             </div>
         </div>
@@ -179,6 +197,7 @@
             <div class="methpay2"><img src="./src/metodopago.avif" alt=""></div>
         </div>
     </main>
+
 
 
     <script src="./funciones.js" ></script>

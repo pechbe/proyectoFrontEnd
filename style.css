@@ -34,7 +34,6 @@
     background-color:   rgb(63, 60, 60);
     box-sizing: border-box;
     width: 200px;
-    
     border-radius: 6px;
     border: none;
 }
@@ -194,15 +193,15 @@
 }
 
 
-.card-head3 button{
-   color: #9d8ce2;
-    width: 350px;
-    height: 50px;
-    border-radius: 6px; 
-    border-color: #9d8ce2;
-    cursor: pointer;
-    font-size: 18px;
-}
+.card-head3 input{
+    color: #9d8ce2;
+     width: 350px;
+     height: 50px;
+     border-radius: 6px; 
+     border-color: #9d8ce2;
+     cursor: pointer;
+     font-size: 18px;
+ }
 
 .card-head3 .btn-popular{
     background-color: #6f4ef6;
@@ -216,7 +215,8 @@
 }
 
 
-.card-head3 button:hover {
+
+.card-head3 input:hover {
     color: #6f4ef6;
     border-color: #6f4ef6;
 }

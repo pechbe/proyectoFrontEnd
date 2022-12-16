@@ -35,6 +35,8 @@ const phoneInputField = document.querySelector("#phone");
       .then((resp) => callback(resp.country));
    }
 
+   const input_membershipid = document.querySelector("#membership_id");
+
    const dropdowns = document.querySelectorAll('.dropdown');
 
    dropdowns.forEach(dropdown => {
@@ -44,7 +46,8 @@ const phoneInputField = document.querySelector("#phone");
     const options = dropdown.querySelectorAll('.menu li');
     const selected = dropdown.querySelector('.selected');
 
- 
+  
+      
 
    select.addEventListener('click', ()=>{
     select.classList.toggle('select-clicked');
@@ -55,6 +58,16 @@ const phoneInputField = document.querySelector("#phone");
    options.forEach(option => {
     option.addEventListener('click', ()=>{
       selected.innerText = option.innerText;
+
+      console.log(selected.innerText);
+      if(selected.innerText === "2 Estudiantes")
+        document.querySelector("#membership_id").innerText = "325";
+
+      if(selected.innerText === "4 Estudiantes")
+        document.querySelector("#membership_id").innerText = "326";
+
+        console.log(document.querySelector("#membership_id").innerTex);
+      
       select.classList.remove('select-clicked');
       caret.classList.remove('caret-rotate');
       menu.classList.remove('menu-open');

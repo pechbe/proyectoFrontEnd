@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <link rel="stylesheet" href="./stylespago.css">
+
+</head>
+<body>
+    
+    <div class="barra">
+        <div class="barra_logo">
+            <img class="barra_imgcrehana" src="./src/logoCrehana.png" alt="">
+        </div>
+        <div class="barra_titpago">
+            Pago 100% seguro
+        </div>
+    </div>
+    
+    <div class="container_section1">
+ 
+        <main class="container_section2">
+            <div class="secciones_pago">
+                <div class="seccion_pago1">
+                    <div class="seccion_pregunta">¿Cómo quiere pagar?</div>
+                    <div class="seccion_formaspago">
+                        <div class="tab_cab_formaspago">
+                            <ul class="ul">
+                                <li class="li activo">
+                                    <img class="forma_pago_logo1" src="./src/cardlogos.png" alt="">
+                                </li>
+                                <li class="li">
+                                    <img class="forma_pago_logo2" src="./src/paypal.png" alt="">
+                                </li>
+                            </ul>
+
+                            <div class="tab_det_formaspago">
+                                <div class="bloque activo">
+                                    <form action="" class="formulario" id="formulario">
+                                    <div class="credit_card" id ="credit_card">
+                                        
+                                        <div class="formulario__grupo" id="grupo__nrodoc">
+                                            <label for="nrodoc" class="formulario__label">Nro Documento del titular</label>
+                                            <div class="formulario__grupo-input">
+                                                <input type="text" class="formulario__input" name="nrodoc" id="nrodoc">
+                                                <img src="./src/Error.svg" id="nrodoc_error" class="formulario__validacion-estado fas fa-times-circle">
+                                            </div>
+                                        </div>
+
+                                        <div class="formulario__grupo" id="grupo__nombre">
+                                            <label for="nombre" class="formulario__label">Titular de la Tarjeta</label>
+                                            <div class="formulario__grupo-input">
+                                                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre completo">
+                                                <img src="./src/Error.svg" id="nombre_error" class="formulario__validacion-estado fas fa-times-circle">
+                                            </div>
+                                        </div>
+
+                                        <div class="formulario__grupo" id="grupo__card">
+                                            <label for="card" class="formulario__label">Número de Tarjeta</label>
+                                            <div class="formulario__grupo-input">
+                                                <input type="text" class="formulario__input"  placeholder="0000-0000-0000-0000" name="card" id="card">
+                                                <img src="./src/Error.svg" id="card_error" class="formulario__validacion-estado fas fa-times-circle">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="formulario__grupo_ven_spw" id="grupo__nombre">
+                                            <div>
+                                                <label for="nombre" class="formulario__label">Vencimiento</label>
+                                                <div class="formulario__grupo-input">
+                                                    <input type="text" class="formulario__input_mmaa" name="exp" id="exp" placeholder="MM/AA" minlength="5" maxlength="5">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <label for="nombre" class="formulario__label">CVC/CVV</label>
+                                                <div class="formulario__grupo-input">
+                                                    <input type="password" class="formulario__input_psw" name="exp" id="exp" placeholder="CVC" minlength="3" maxlength="5">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="formulario__grupo_correo" id="grupo__email">
+                                            <label for="email" class="formulario__label">Correo electrónico</label>
+                                            <div class="formulario__grupo-input">
+                                                <input type="text" class="formulario__input" name="email" >
+                                                <img src="./src/Error.svg" id="email_error" class="formulario__validacion-estado fas fa-times-circle">
+                                            </div>
+                                        </div>
+
+                                        <!-- Grupo: Terminos y Condiciones -->
+                                        <div class="formulario__grupo_terminos" id="grupo__terminos">
+                                            <label class="formulario__label">
+                                                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                                                <a href="https://www.crehana.com/legal/terminos-y-condiciones/" class="terminos_check" target="_blank">Acepto los términos y condiciones</a> 
+                                            </label>
+                                        </div>
+
+                                        <div class="formulario__mensaje" id="formulario__mensaje">
+                                            <img src="./src/warning.svg" alt="" class="formulario__validacion-estado fas fa-times-circle">
+                                            <b>Error:</b>&nbsp; &nbsp; Ingresa todos los datos y acepta los términos.
+                                        </div>
+
+                                        <div class="formulario__grupo formulario__grupo-btn-enviar">
+                                            <button type="submit" class="formulario__btn">Comprar ahora</button>
+                                            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Pago realizado exitosamente!</p>
+                                        </div>
+
+                        
+                                    </div>
+                                    </form>
+                                </div>
+                                <div class="bloque">
+                                    <div>
+                                        <p>Para seguir con su compra, incie sesión con su cuenta Paypal</p>
+                                        <label class="formulario__label">
+                                            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                                            <a href="https://www.crehana.com/legal/terminos-y-condiciones/" class="terminos_check" target="_blank">Acepto los términos y condiciones</a> 
+                                        </label>
+                                        <div class="formulario__grupo formulario__grupo-btn-enviar">
+                                            <button type="submit" class="formulario__btn" id="open-popup">Ir a Paypal</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="seccion_pago2">
+                    <div class="seccion_pago2_1">
+                        <div class="seccion_garantia">
+                            <img class="seccion_imggarantia" src="./src/garantia.png" alt="">
+                        </div>
+                        <div class="seccion_aviso">
+                            <p>
+                                Si su experiencia con la compra no es lo que esperaba, le haremos un reembolso del 100% de su pago. Por favor revisar nuestras Políticas de Reembolso.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="seccion_pago2_2">
+                        <div class="sec_crehana_premium">
+                            <img class="img_crehana_premium" src="./src/logoCrehanaPremium.png" alt="">
+                        </div>
+                        <div style="word-wrap: break-word ;">
+                            <h2 id="tipo_membresia" style="display: flex; overflow: auto;" >Acceda a todo el catálogo con una Membresía Premium</h2>
+                        </div>
+                        <div>
+                            <div class="seccion_pago2_2_toga">
+                                <img src="./src/toga.svg" alt="">
+                                Acceso a +1000 cursos y especializaciones
+                            </div>
+                            <div class="seccion_pago2_2_valido">
+                                <img src="./src/Valido.svg" alt="">
+                                Válida por 1 año, autorenovable
+                            </div>
+                        </div>
+                        <div>
+                            <div class="total_a_pagar">
+                                <div class="total_a_pagar_tit">Total a pagar:</div>
+                                <div class="total_a_pagar_importe" id="total_a_pagar_importe">
+                                    <div class="total_a_pagar_impnew" id="total_a_pagar_impnew"></div>
+                                    <div class="total_a_pagar_espacio"></div>
+                                    <div class="total_a_pagar_impold" id="total_a_pagar_impold" style="text-decoration:line-through;"></div>
+                                </div> 
+                            </div>
+                            <div class="seccion_aviso2">
+                                El cobro va a ser de US$ 69.7, los precios base que manejamos son en dólares americanos. El monto que ves en tu moneda local es un aproximado que puede variar de acuerdo a tu banco y el tipo de cambio del día, está sujeto a impuestos propios de cada país, los cuales serán asumidos por los usuarios finales.
+                            </div>
+                            <div class="seccion_aviso3">
+                                (1) Acepto expresamente todos los Términos y Condiciones de Membresías Premium y Pay As You Go. Del mismo, modo acepto las Políticas y Avisos de Protección y Tratamiento de Datos Personales de Crehana: Generales, Colombia, México.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            
+                <img src="./src/LogoPaypal.svg" style="width: 40px;" alt="">   
+                <h4>Pagar con Paypal</h4>  
+            
+            <h5>Para comenzar, introduzca su dirección de correo electrónico</h5>
+            <form action="">
+                <div class="contenedor-inputs1">
+                    <input type="text" placeholder="Correo electrónico o número móvil">
+                    <input type="submit" class="btn-submit" value="Siguiente">
+                </div>
+                <div class="contenedor-inputs2">
+                    <input type="submit" class="btn-submit" value="Pagar con tarjeta de débito o crédito">
+                </div>
+            </form>
+           
+        </div>
+    </div>
+
+    <script src="./funcionespago.js" ></script>
+    <script src="./validacionespago.js" ></script>
+</body>
+</html>
