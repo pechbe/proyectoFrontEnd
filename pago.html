@@ -23,24 +23,23 @@
     </div>
     
     <div class="container_section1">
- 
         <main class="container_section2">
             <div class="secciones_pago">
                 <div class="seccion_pago1">
                     <div class="seccion_pregunta">¿Cómo quiere pagar?</div>
                     <div class="seccion_formaspago">
-                        <div class="tab_cab_formaspago">
+                        <div class="tab_cab_formaspago"><!--contenedor-->
                             <ul class="ul">
-                                <li class="li activo">
+                                <li id="option1" class="option option-active"> <!--antes li activo-->
                                     <img class="forma_pago_logo1" src="./src/cardlogos.png" alt="">
                                 </li>
-                                <li class="li">
+                                <li id="option2" class="option">
                                     <img class="forma_pago_logo2" src="./src/paypal.png" alt="">
                                 </li>
                             </ul>
 
-                            <div class="tab_det_formaspago">
-                                <div class="bloque activo">
+                            <div class="tab_det_formaspago"> <!--subcontenedor-->
+                                <div id ="content1" class="content content-active"> <!--antes bloque activo-->
                                     <form action="" class="formulario" id="formulario">
                                     <div class="credit_card" id ="credit_card">
                                         
@@ -108,12 +107,10 @@
                                             <button type="submit" class="formulario__btn">Comprar ahora</button>
                                             <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Pago realizado exitosamente!</p>
                                         </div>
-
-                        
                                     </div>
                                     </form>
                                 </div>
-                                <div class="bloque">
+                                <div id ="content2" class="content"> <!--antes bloque-->
                                     <div>
                                         <p>Para seguir con su compra, incie sesión con su cuenta Paypal</p>
                                         <label class="formulario__label">
